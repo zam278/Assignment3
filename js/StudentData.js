@@ -1,121 +1,63 @@
-var studentPizzaShops = [
-    {
-      "name": "nlicalzi",
-      "favoritepizzashop": "totonno's",
-      "nyuprogram": "cusp",
-      "lng": -73.9838232,
-      "lat": 40.5789173
-    },
-    {
-      "name": "paola",
-      "favoritepizzashop": "prince street pizza",
-      "nyuprogram": "wagner",
-      "lng": -73.994558,
-      "lat": 40.722989
-    },
-    {
-      "name": "kloe",
-      "favoritepizzashop": "artichoke",
-      "nyuprogram": "cusp",
-      "lng": -73.9792659,
-      "lat": 40.6809026
-    },
-    {
-      "name": "Zee",
-      "favoritepizzashop": "Ben's Pizza (NYU)",
-      "nyuprogram": "wagner",
-      "lng": -74.00765651,
-      "lat": 40.72903507
-    },
-    {
-      "name": "Shivam",
-      "favoritepizzashop": "Joe's Pizza",
-      "nyuprogram": "cusp",
-      "lng": -74.0357596,
-      "lat": 40.7131156
-    },
-    {
-      "name": "zoe martiniak",
-      "favoritepizzashop": "Vinnie's (Nassau)",
-      "nyuprogram": "cusp",
-      "lng": -73.941825,
-      "lat": 40.725932
-    },
-    {
-      "name": "JingxiZhao",
-      "favoritepizzashop": "Prince Street Pizza",
-      "nyuprogram": "cusp",
-      "lng": -73.994485,
-      "lat": 40.723336
-    },
-    {
-      "name": "Kent",
-      "favoritepizzashop": "Piz-zetta",
-      "nyuprogram": "cusp",
-      "lng": -73.9928206,
-      "lat": 40.6911691
-    },
-    {
-      "name": "natalie gomez",
-      "favoritepizzashop": "ginos",
-      "nyuprogram": "global liberal studies",
-      "lng": -73.8127885,
-      "lat": 40.7326951
-    },
-    {
-      "name": "yunhe cui",
-      "favoritepizzashop": "domino's",
-      "nyuprogram": "cusp",
-      "lng": -73.997103,
-      "lat": 40.732478
-    },
-    {
-      "name": "Chris Whong",
-      "favoritepizzashop": "Ben's Pizza",
-      "nyuprogram": "adjunct",
-      "lng": -74.000324,
-      "lat": 40.730392
-    },
-    {
-      "name": "Julie",
-      "favoritepizzashop": "sunnyside pizza",
-      "nyuprogram": "wagner",
-      "lng": -73.9262144,
-      "lat": 40.7440695
-    },
-    {
-      "name": "alexander",
-      "favoritepizzashop": "grimaldi's",
-      "nyuprogram": "wagner",
-      "lng": -74.01129,
-      "lat": 40.722138
-    },
-    {
-      "name": "Meagan",
-      "favoritepizzashop": "Bleecker Street",
-      "nyuprogram": "wagner",
-      "lng": -74.003177,
-      "lat": 40.73232
-    },
-    {
-      "name": "marium",
-      "favoritepizzashop": "milkflower",
-      "nyuprogram": "cusp",
-      "lng": -73.920772,
-      "lat": 40.762821
-    },
-    {
-      "name": "Rufei",
-      "favoritepizzashop": "&pizza",
-      "nyuprogram": "cusp",
-      "lng": -73.9885056,
-      "lat": 40.7314432
-    },
-    {
-      "name": "Nicole",
-      "favoritepizzashop": "Champion Pizza",
-      "nyuprogram": "wagner",
-      "lng": -73.9249942,
-      "lat": 40.7615968
-    }
-  ]
+var studentFavoriteSpots = [
+
+{
+  "name": "Meriam",
+  "favoritspot": "Balthazar Bakery",
+  "lag": -73.981492,
+  "lat": 40.887379
+},
+{
+  "name": "Letal",
+  "favoritspot": "Porta Pizza",
+  "lag": -74.0459353,
+  "lat": 40.720288
+},
+{
+  "name": "Saba",
+  "favoritspot": "Bucket & Bay",
+  "lag": -74.0342191,
+  "lat": 40.7374588
+},
+{
+  "name": "Salma",
+  "favoritspot": "Laffayette Café'",
+  "lag": -73.9958957,
+  "lat": 40.7275934
+},
+{
+  "name": "Roaa",
+  "favoritspot": "Blue Strips Cacao Shop",
+  "lag": -73.995091,
+  "lat": 40.7346342
+},
+{
+  "name": "May",
+  "favoritspot": "Bluestone Lane (Greenwich)",
+  "lag": -74.0030846,
+  "lat": 40.7358132
+},
+{
+  "name": "Aleena",
+  "favoritspot": "Edo Sushi",
+  "lag": -73.9934704,
+  "lat": 40.7377082
+},
+{
+  "name": "TJ",
+  "favoritspot": "Indeblue",
+  "lag": -75.1642297,
+  "lat": 39.9485153
+},
+{
+  "name": "Fran",
+  "favoritspot": "Rittenhouse Square",
+  "lag": -75.1748791,
+  "lat": 39.9479448
+},
+{
+  "name": "Neelima",
+  "favoritspot": "Suraya",
+  "lag": -75.1361368,
+  "lat": 39.9736966
+}
+]
