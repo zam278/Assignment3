@@ -26,7 +26,7 @@ var studentFavoriteSpots = [
 },
 {
   "name": "Roaa",
-  "favoritespot": "Blue Strips Cacao Shop",
+  "favoritspot": "Blue Strips Cacao Shop",
   "lng": -73.995091,
   "lat": 40.7346342
 },

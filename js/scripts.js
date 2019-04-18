@@ -11,6 +11,7 @@ var map = new mapboxgl.Map({
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
 
+//we create variables {var} to uphold any equation we want to re-use
 var popup = new mapboxgl.Popup({ offset: 40 })
   .setText('Hi Web Mapping 2019 Class!');
 
@@ -20,9 +21,9 @@ var marker = new mapboxgl.Marker()
   .setLngLat([-74.005420,40.789654])
   .setPopup(popup)
   .addTo(map);
-
+//to create a loop for the marker; every for loop it has to start and end with {}
   studentFavoriteSpots.forEach(function(studentData) {
-
+// we add this to create a marker for every name, if we dont add this it will just loop through it in Atom.. if something>>do something
     new mapboxgl.Marker({
 
       })
