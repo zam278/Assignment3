@@ -28,6 +28,6 @@ var marker = new mapboxgl.Marker()
       })
   .setLngLat([studentData.lng, studentData.lat])
   .setPopup(new mapboxgl.Popup({ offset: 40 })
-    .setText(`${studentData.name} says their favorite Spot is ${studentData.studentFavoriteSpots}`))
+    .setText(`${studentData.name} says their favorite Spot is ${studentData.favoritspot}`))
   .addTo(map);
 })
