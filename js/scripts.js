@@ -15,6 +15,6 @@ var popup = new mapboxgl.Popup({ offset: 40 })
   .setText('Hi Web Mapping 2019 Class!');
 
 var marker = new mapboxgl.Marker()
-  .setLngLat([-73.969145,40.669116])
+  .setLngLat([-74.00,40.78])
   .setPopup(popup)
   .addTo(map);
