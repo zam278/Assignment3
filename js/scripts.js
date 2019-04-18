@@ -7,3 +7,14 @@ var map = new mapboxgl.Map({
   center: [-74.00, 40.78],
   zoom: 9.5,
 });
+
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
+
+var popup = new mapboxgl.Popup({ offset: 40 })
+  .setText('Hi Web Mapping 2019 Class!');
+
+var marker = new mapboxgl.Marker()
+  .setLngLat([-73.969145,40.669116])
+  .setPopup(popup)
+  .addTo(map);
