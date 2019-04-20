@@ -1,4 +1,6 @@
+
 var studentFavoriteSpots = [
+
 
 {
   "name": "Meriam",
