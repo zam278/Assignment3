@@ -4,3 +4,16 @@
   background: lightgray;
   margin: 0 auto;
 }
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#text {
+  font-family: 'Open Sans', sans-serif;
+  width: 650px
+}
