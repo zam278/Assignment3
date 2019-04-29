@@ -6,7 +6,7 @@ var map = new mapboxgl.Map({
   container: 'mapContainer',
   style: 'mapbox://styles/mapbox/light-v9',
   center: [-74.428253, 40.231315],
-  zoom: 10,
+  zoom: 11,
 });
 
 // Add zoom and rotation controls to the map.
