@@ -6,7 +6,7 @@ var map = new mapboxgl.Map({
   container: 'mapContainer',
   style: 'mapbox://styles/mapbox/light-v9',
   center: [-74.428253, 40.231315],
-  zoom: 11,
+  zoom: 7,
 });
 
 // Add zoom and rotation controls to the map.
@@ -29,7 +29,10 @@ var marker = new mapboxgl.Marker()
 
       })
   .setLngLat([studentData.lng, studentData.lat])
+  // add Popup
   .setPopup(new mapboxgl.Popup({ offset: 40 })
+  .setHTML('<h3>' + marker.properties.studentFavoriteSpots +'</h3><p>' + "Location"
+)
     .setText(`${studentData.name} says their favorite Spot is ${studentData.favoritspot}`))
   .addTo(map);
 })

@@ -6,14 +6,15 @@
 }
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Impact', sans-serif;
 }
 
 h3 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Impact', sans-serif;
 }
 
 #text {
-  font-family: 'Open Sans', sans-serif;
-  width: 650px
+  font-family: 'Impact', sans-serif;
+  width: 650px;
+  text-align: center;
 }
