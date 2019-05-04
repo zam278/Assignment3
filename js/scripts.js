@@ -9,10 +9,6 @@ var map = new mapboxgl.Map({
   zoom: 11.5,
 });
 
-
-// Add zoom and rotation controls to the map.
-map.addControl(new mapboxgl.NavigationControl());
-
   //to create a loop for the marker; every for loop it has to start and end with {}
   movie.forEach(function(movieData) {
 
@@ -33,3 +29,6 @@ new mapboxgl.Marker (el)
         marker.properties.movie.location + '</p>' ))
   .addTo(map);
 });
+
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
