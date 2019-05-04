@@ -12,7 +12,7 @@ var map = new mapboxgl.Map({
 var popup = new mapboxgl.Popup({ offset: 40 })
 var marker = new mapboxgl.Marker()
   .setPopup(popup)
-  .addTo(map);
+.addTo(map);
 
   //to create a loop for the marker; every for loop it has to start and end with {}
   movie.forEach(function(movieData) {
