@@ -30,10 +30,11 @@ map.addControl(new mapboxgl.NavigationControl());
       })
       //make a marker for each feature and add to the map
       new mapboxgl.Marker()
-        .setLngLat([movieData.lng, movieData.lat])
+        .setLngLat([movieData.lon, movieData.lat])
         .addTo(map);
 
           // add Popup
+  var popup = new mapboxgl.Popup({ offset: 40 })
   .setPopup(new mapboxgl.Popup({ offset: 40 })
   .setHTML('<h3>' + marker.properties.movie_description +'</h3><p>' + "Year" + "Rating" +
         marker.properties.movie_rating + " out of 10" + '</p><p>' +
