@@ -9,25 +9,6 @@ var map = new mapboxgl.Map({
   zoom: 11.5,
 });
 
-//map style
-{
-  "id": "water",
-  "type": "fill",
-  "source": "openmaptiles",
-  "source-layer": "water",
-  "filter": [
-    "==",
-    "$type",
-    "Polygon"
-  ],
-  "layout": {
-    "visibility": "visible"
-  },
-  "paint": {
-    "fill-color": "rgba(167, 211, 226, 1)",
-    "fill-antialias": true
-  }
-}
 
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
