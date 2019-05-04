@@ -22,7 +22,7 @@ movie.forEach(function(movieData) {
     if (movieData.movietype === 'Comedy') thisMovieColor = 'plum';
     if (movieData.movietype === 'Crime') thisMovieColor = 'springgreen';
     if (movieData.movietype === 'Drama') thisMovieColor = 'dodgerblue';
-    if (movieData.movietype === 'Fantacy') thisMovieColor = 'yellow';
+    if (movieData.movietype === 'Fantacy') thisMovieColor = 'Pink';
     if (movieData.movietype === 'Romance') thisMovieColor = 'seagreen';
 
 // to add a marker for each feature
@@ -39,3 +39,56 @@ new mapboxgl.Marker({
 
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
+
+//add legend to the map
+
+var MovieLookUp = (code) => {
+  switch (code) {
+    case 1:
+      return {
+        color: 'orange',
+        description: 'Action',
+      };
+      case 2:
+        return {
+          color: 'plum',
+          description: 'Comedy',
+        };
+      case 3:
+        return {
+          color: 'springgreen',
+          description: 'Crime',
+        };
+      case 4:
+        return {
+          color: 'dodgerblue',
+          description: 'Drama',
+        };
+      case 5:
+        return {
+          color: 'Pink',
+          description: 'Fantasy',
+        };
+    case 5:
+      return {
+        color: 'seagreen',
+        description: 'Romance',
+      };
+    }
+   };
+var legend = L.control({position: 'upperleft'});
+
+legend.onAdd = function (map) {
+  var div = L.DomUtil.create('div', 'info legend');
+    movie = ['Action','Comedy','Crime','Drama','Fantasy','Romance'];
+
+  // loop through the categories values and generate a label with a circle for each value
+
+  for (var i = 0; i < films.length; i++) {
+
+    div.innerHTML +=   '<i class="circle" style="background:' + getColor(films[i]) + '"></i> ' + (films[i] ? films[i] + '<br>' : '+');
+  }
+	return div;
+
+};
+legend.addTo(map);
