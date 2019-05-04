@@ -17,12 +17,12 @@ var marker = new mapboxgl.Marker()
   movie.forEach(function(movieData) {
 
     var thisMovieColor = 'steelblue';
-    if (movieData.movietype === 'Action') thisMovieColor = 'orange';
-    if (movieData.movietype === 'Comedy') thisMovieColor = 'plum';
-    if (movieData.movietype === 'Crime') thisMovieColor = 'springgreen';
-    if (movieData.movietype === 'Drama') thisMovieColor = 'dodgerblue';
-    if (movieData.movietype === 'Fantacy') thisMovieColor = 'Pink';
-    if (movieData.movietype === 'Romance') thisMovieColor = 'seagreen';
+    if (movieData.type === 'Action') thisMovieColor = 'orange';
+    if (movieData.type === 'Comedy') thisMovieColor = 'plum';
+    if (movieData.type === 'Crime') thisMovieColor = 'springgreen';
+    if (movieData.type === 'Drama') thisMovieColor = 'dodgerblue';
+    if (movieData.type === 'Fantacy') thisMovieColor = 'Pink';
+    if (movieData.type === 'Romance') thisMovieColor = 'seagreen';
 
 // to add a marker for each feature
 new mapboxgl.Marker({
