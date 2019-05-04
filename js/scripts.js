@@ -21,7 +21,7 @@ var map = new mapboxgl.Map({
     if (movieData.movietype === 'Romance') thisMovieColor = 'seagreen';
 
 // to add a marker for each feature
-new mapboxgl.Marker (el)
+var new mapboxgl.Marker (el)
   .setLngLat([movieDate.lon, movieDate.lat])
   .setPopup(new mapboxgl.Popup({ offset: 40 })
       .setHTML('<h3>' + marker.properties.movie_description +'</h3><p>' + "Year" + "Rating" +
