@@ -26,8 +26,8 @@ var marker = new mapboxgl.Marker()
 
 // to add a marker for each feature
 new mapboxgl.Marker({
-    color: thisMovieColors,
-  })
+  color: thisMoviesColor,
+})
   .setLngLat([movieDate.lon, movieDate.lat])
   .setPopup(new mapboxgl.Popup({ offset: 40 })
     .setHTML('<h3>' + marker.properties.movie_description +'</h3><p>' + "Year" + "Rating" +
