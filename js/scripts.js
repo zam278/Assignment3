@@ -93,5 +93,4 @@ $('.legend').append(`
 `)
 }
 
-};
 legend.addTo(map);
