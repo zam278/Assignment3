@@ -3,7 +3,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY3dob25nIiwiYSI6IjAyYzIwYTJjYTVhMzUxZTVkMzdmY
 
 
 var map = new mapboxgl.Map({
-  container: 'mapContainer',
+  container: 'map',
   style: 'mapbox://styles/mapbox/light-v9',
   Center =[-73.960819,40.755580];
   zoom= 12;
@@ -32,16 +32,6 @@ var map = new mapboxgl.Map({
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
 
-//we create variables {var} to uphold any equation we want to re-use
-var popup = new mapboxgl.Popup({ offset: 40 })
-  .setText('Hi Web Mapping 2019 Class!');
-
-//var marker: This adds only one marker.  If you want to add more than one, you can repeat all of this code with a different LngLat
-//or you will need to make a loop that executes this code with different variables
-var marker = new mapboxgl.Marker()
-  .setLngLat([-74.005420,40.789654])
-  .setPopup(popup)
-  .addTo(map);
   //to create a loop for the marker; every for loop it has to start and end with {}
   movie.forEach(function(movieData) {
 
@@ -57,11 +47,15 @@ var marker = new mapboxgl.Marker()
     new mapboxgl.Marker({
 
       })
-  .setLngLat([studentData.lng, studentData.lat])
-  // add Popup
+      //make a marker for each feature and add to the map
+      new mapboxgl.Marker()
+        .setLngLat([movieData.lng, movieData.lat])
+        .addTo(map);
+
+          // add Popup
   .setPopup(new mapboxgl.Popup({ offset: 40 })
-  .setHTML('<h3>' + marker.properties.FilmLocation +'</h3><p>' + "Location"
-)
-    .setText(`${studentData.name} says their favorite Spot is ${studentData.favoritspot}`))
+  .setHTML('<h3>' + marker.properties.movie_description +'</h3><p>' + "Year" + "Rating" +
+        marker.properties.movie_rating + " out of 10" + '</p><p>' +
+        marker.properties.movie.location + '</p>' ))
   .addTo(map);
-})
+});
