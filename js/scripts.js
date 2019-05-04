@@ -15,7 +15,7 @@ var marker = new mapboxgl.Marker()
 .addTo(map);
 
   //to create a loop for the marker; every for loop it has to start and end with {}
-  movie.forEach(function(movieData) {
+movie.forEach(function(movieData) {
 
     var thisMovieColor = 'steelblue';
     if (movieData.movietype === 'Action') thisMovieColor = 'orange';
