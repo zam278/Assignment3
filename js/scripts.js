@@ -39,9 +39,9 @@ filmSpots.forEach(function(filmData) {
   })
     .setLngLat([filmData.lon, filmData.lat])
     .setPopup(new mapboxgl.Popup({ offset: 40 })
-      .setHTML('<h3>' + marker.properties.description +'</h3><p>' + "Year" + "Rating" +
-        marker.properties.rate + " out of 10" + '</p><p>' +
-        marker.properties.location + '</p>' ))
+      .setHTML('<h3>' + filmData.description +'</h3><p>' + "Year" + "Rating" +
+        filmData.rate + " out of 10" + '</p><p>' +
+        filmData.location + '</p>' ))
 
 //add legend to the map
 
