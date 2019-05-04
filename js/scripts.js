@@ -5,9 +5,29 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY3dob25nIiwiYSI6IjAyYzIwYTJjYTVhMzUxZTVkMzdmY
 var map = new mapboxgl.Map({
   container: 'mapContainer',
   style: 'mapbox://styles/mapbox/light-v9',
-  center: [-74.428253, 40.231315],
-  zoom: 7,
+  Center =[40.755580,-73.960819];
+  zoom= 12;
 });
+
+<--!map style!-->
+{
+  "id": "water",
+  "type": "fill",
+  "source": "openmaptiles",
+  "source-layer": "water",
+  "filter": [
+    "==",
+    "$type",
+    "Polygon"
+  ],
+  "layout": {
+    "visibility": "visible"
+  },
+  "paint": {
+    "fill-color": "rgba(167, 211, 226, 1)",
+    "fill-antialias": true
+  }
+}
 
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
