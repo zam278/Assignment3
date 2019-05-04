@@ -24,7 +24,7 @@ var map = new mapboxgl.Map({
 new mapboxgl.Marker (el)
   .setLngLat([movieDate.lon, movieDate.lat])
   .setPopup(new mapboxgl.Popup({ offset: 40 })
-  .setHTML('<h3>' + marker.properties.movie_description +'</h3><p>' + "Year" + "Rating" +
+      .setHTML('<h3>' + marker.properties.movie_description +'</h3><p>' + "Year" + "Rating" +
         marker.properties.movie_rating + " out of 10" + '</p><p>' +
         marker.properties.movie.location + '</p>' ))
   .addTo(map);
