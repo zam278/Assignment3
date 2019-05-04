@@ -5,39 +5,45 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY3dob25nIiwiYSI6IjAyYzIwYTJjYTVhMzUxZTVkMzdmY
 var map = new mapboxgl.Map({
   container: 'mapContainer',
   style: 'mapbox://styles/mapbox/light-v9',
-  center: [-73.966999,40.739584],
-  zoom: 11.5,
-});
-
-var popup = new mapboxgl.Popup({ offset: 40 })
-var marker = new mapboxgl.Marker()
-  .setPopup(popup)
-
-  //to create a loop for the marker; every for loop it has to start and end with {}
-  movie.forEach(function(movieData) {
-
-    var thisMovieColor = 'steelblue';
-    if (movieData.type === 'Action') thisMovieColor = 'orange';
-    if (movieData.type === 'Comedy') thisMovieColor = 'plum';
-    if (movieData.type === 'Crime') thisMovieColor = 'springgreen';
-    if (movieData.type === 'Drama') thisMovieColor = 'dodgerblue';
-    if (movieData.type === 'Fantacy') thisMovieColor = 'Pink';
-    if (movieData.type === 'Romance') thisMovieColor = 'seagreen';
-
-// to add a marker for each feature
-new mapboxgl.Marker({
-  color: thisMovieColor,
-})
-  .setLngLat([movieData.lon, movieData.lat])
-  .setPopup(new mapboxgl.Popup({ offset: 40 })
-    .setHTML('<h3>' + marker.properties.movie_description +'</h3><p>' + "Year" + "Rating" +
-        marker.properties.movie_rate + " out of 10" + '</p><p>' +
-        marker.properties.movie_location + '</p>' ))
-  .addTo(map);
+  center: [-73.98, 40.70],
+  zoom: 9.5,
 });
 
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
+
+var popup = new mapboxgl.Popup({ offset: 40 })
+  .setText('Hi Web Mapping 2019 Class!');
+
+var marker = new mapboxgl.Marker()
+  .setLngLat([-73.969145,40.669116])
+  .setPopup(popup)
+  .addTo(map);
+
+
+  //to create a loop for the marker; every for loop it has to start and end with {}
+filmLocation.forEach(function(movieData) {
+
+  var thisStudentsColor = 'steelblue';
+  if (movieData.type === 'Action') thisFilmColor = 'orange';
+  if (movieData.type === 'Comedy') thisFilmColor = 'plum';
+  if (movieData.type === 'Crime') thisFilmColor = 'springgreen';
+  if (movieData.type === 'Drama') thisFilmColor = 'dodgerblue';
+  if (movieData.type === 'Fantasy') thisFilmColor = 'pink';
+  if (movieData.type === 'Romance') thisFilmColor = 'seagreen';
+
+
+  // to add a marker for each feature
+  new mapboxgl.Marker({
+    color: thisStudentsColor,
+  })
+    .setLngLat([filmData.lon, filmData.lat])
+    .setPopup(new mapboxgl.Popup({ offset: 40 })
+      .setHTML('<h3>' + marker.properties.description +'</h3><p>' + "Year" + "Rating" +
+        marker.properties.rate + " out of 10" + '</p><p>' +
+        marker.properties.location + '</p>' ))setText(`${filmData.description} says their favorite pizza shop is ${studentData.favoritepizzashop}`))
+    .addTo(map);
+})
 
 //add legend to the map
 

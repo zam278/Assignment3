@@ -1,5 +1,5 @@
 
-var movie = [
+var filmLocation = [
  {
    "location": "The St. Regis New York",
    "type": "Crime",
