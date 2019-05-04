@@ -24,17 +24,9 @@ map.addControl(new mapboxgl.NavigationControl());
     if (movieData.movietype === 'Fantacy') thisMovieColor = 'yellow';
     if (movieData.movietype === 'Romance') thisMovieColor = 'seagreen';
 
-// we add this to create a marker for every name, if we dont add this it will just loop through it in Atom.. if something>>do something
-    new mapboxgl.Marker({
-
-      })
-      //make a marker for each feature and add to the map
-      new mapboxgl.Marker()
-        .setLngLat([movieData.lon, movieData.lat])
-        .addTo(map);
-
-          // add Popup
-  var popup = new mapboxgl.Popup({ offset: 40 })
+// to add a marker for each feature
+new mapboxgl.Marker (el)
+  .setLngLat([movieDate.lon, movieDate.lat])
   .setPopup(new mapboxgl.Popup({ offset: 40 })
   .setHTML('<h3>' + marker.properties.movie_description +'</h3><p>' + "Year" + "Rating" +
         marker.properties.movie_rating + " out of 10" + '</p><p>' +
