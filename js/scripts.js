@@ -76,19 +76,22 @@ var MovieLookUp = (code) => {
       };
     }
    };
+
+
 var legend = L.control({position: 'upperleft'});
 
-legend.onAdd = function (map) {
-  var div = L.DomUtil.create('div', 'info legend');
-    movie = ['Action','Comedy','Crime','Drama','Fantasy','Romance'];
+  // use jquery to programmatically create a Legend
+// for numbers 1 - 5, get the movie color and description
+for (var i=1; i<5; i++) {
 
-  // loop through the categories values and generate a label with a circle for each value
-
-  for (var i = 0; i < films.length; i++) {
-
-    div.innerHTML +=   '<i class="circle" style="background:' + getColor(films[i]) + '"></i> ' + (films[i] ? films[i] + '<br>' : '+');
-  }
-	return div;
+  // this is a simple jQuery template, it will append a div to the legend with the color and description
+$('.legend').append(`
+  <div>
+    <div class="legend-color-box" style="background-color:${movieInfo.color};"></div>
+    ${movieInfo.description}
+  </div>
+`)
+}
 
 };
 legend.addTo(map);
