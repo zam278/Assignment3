@@ -9,7 +9,7 @@ var map = new mapboxgl.Map({
   zoom= 12;
 });
 
-<--!map style!-->
+//map style
 {
   "id": "water",
   "type": "fill",
