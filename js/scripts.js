@@ -22,8 +22,17 @@ var marker = new mapboxgl.Marker()
   .setLngLat([-74.005420,40.789654])
   .setPopup(popup)
   .addTo(map);
-//to create a loop for the marker; every for loop it has to start and end with {}
-  studentFavoriteSpots.forEach(function(studentData) {
+  //to create a loop for the marker; every for loop it has to start and end with {}
+  movie.forEach(function(movieData) {
+
+    var thisMovieColor = 'steelblue';
+    if (movieData.movietype === 'Action') thisMovieColor = 'orange';
+    if (movieData.movietype === 'Comedy') thisMovieColor = 'plum';
+    if (movieData.movietype === 'Crime') thisMovieColor = 'springgreen';
+    if (movieData.movietype === 'Drama') thisMovieColor = 'dodgerblue';
+    if (movieData.movietype === 'Fantacy') thisMovieColor = 'yellow';
+    if (movieData.movietype === 'Romance') thisMovieColor = 'seagreen';
+
 // we add this to create a marker for every name, if we dont add this it will just loop through it in Atom.. if something>>do something
     new mapboxgl.Marker({
 
@@ -31,7 +40,7 @@ var marker = new mapboxgl.Marker()
   .setLngLat([studentData.lng, studentData.lat])
   // add Popup
   .setPopup(new mapboxgl.Popup({ offset: 40 })
-  .setHTML('<h3>' + marker.properties.studentFavoriteSpots +'</h3><p>' + "Location"
+  .setHTML('<h3>' + marker.properties.FilmLocation +'</h3><p>' + "Location"
 )
     .setText(`${studentData.name} says their favorite Spot is ${studentData.favoritspot}`))
   .addTo(map);
