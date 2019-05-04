@@ -9,6 +9,11 @@ var map = new mapboxgl.Map({
   zoom: 11.5,
 });
 
+var popup = new mapboxgl.Popup({ offset: 40 })
+var marker = new mapboxgl.Marker()
+  .setPopup(popup)
+  .addTo(map);
+
   //to create a loop for the marker; every for loop it has to start and end with {}
   movie.forEach(function(movieData) {
 
@@ -21,10 +26,12 @@ var map = new mapboxgl.Map({
     if (movieData.movietype === 'Romance') thisMovieColor = 'seagreen';
 
 // to add a marker for each feature
-var new mapboxgl.Marker (el)
+new mapboxgl.Marker({
+    color: thisMovieColors,
+  })
   .setLngLat([movieDate.lon, movieDate.lat])
   .setPopup(new mapboxgl.Popup({ offset: 40 })
-      .setHTML('<h3>' + marker.properties.movie_description +'</h3><p>' + "Year" + "Rating" +
+    .setHTML('<h3>' + marker.properties.movie_description +'</h3><p>' + "Year" + "Rating" +
         marker.properties.movie_rating + " out of 10" + '</p><p>' +
         marker.properties.movie.location + '</p>' ))
   .addTo(map);
