@@ -16,7 +16,7 @@ var marker = new mapboxgl.Marker()
   //to create a loop for the marker; every for loop it has to start and end with {}
   movie.forEach(function(movieData) {
 
-    var thisMoviesColor = 'steelblue';
+    var thisMovieColor = 'steelblue';
     if (movieData.movietype === 'Action') thisMovieColor = 'orange';
     if (movieData.movietype === 'Comedy') thisMovieColor = 'plum';
     if (movieData.movietype === 'Crime') thisMovieColor = 'springgreen';
@@ -26,7 +26,7 @@ var marker = new mapboxgl.Marker()
 
 // to add a marker for each feature
 new mapboxgl.Marker({
-  color: thisMoviesColor,
+  color: thisMovieColor,
 })
   .setLngLat([movieData.lon, movieData.lat])
   .setPopup(new mapboxgl.Popup({ offset: 40 })
