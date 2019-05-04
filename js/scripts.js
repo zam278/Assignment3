@@ -22,20 +22,20 @@ var marker = new mapboxgl.Marker()
 
 
   //to create a loop for the marker; every for loop it has to start and end with {}
-filmLocation.forEach(function(filmData) {
+filmSpots.forEach(function(filmData) {
 
-  var thisStudentsColor = 'steelblue';
-  if (movieData.type === 'Action') thisFilmColor = 'orange';
-  if (movieData.type === 'Comedy') thisFilmColor = 'plum';
-  if (movieData.type === 'Crime') thisFilmColor = 'springgreen';
-  if (movieData.type === 'Drama') thisFilmColor = 'dodgerblue';
-  if (movieData.type === 'Fantasy') thisFilmColor = 'pink';
-  if (movieData.type === 'Romance') thisFilmColor = 'seagreen';
+  var thisFilmColor = 'steelblue';
+  if (filmData.type === 'Action') thisFilmColor = 'orange';
+  if (filmData.type === 'Comedy') thisFilmColor = 'plum';
+  if (filmData.type === 'Crime') thisFilmColor = 'springgreen';
+  if (filmData.type === 'Drama') thisFilmColor = 'dodgerblue';
+  if (filmData.type === 'Fantasy') thisFilmColor = 'pink';
+  if (filmData.type === 'Romance') thisFilmColor = 'seagreen';
 
 
   // to add a marker for each feature
   new mapboxgl.Marker({
-    color: thisStudentsColor,
+    color: thisFilmColor,
   })
     .setLngLat([filmData.lon, filmData.lat])
     .setPopup(new mapboxgl.Popup({ offset: 40 })
