@@ -41,13 +41,11 @@ filmLocation.forEach(function(movieData) {
     .setPopup(new mapboxgl.Popup({ offset: 40 })
       .setHTML('<h3>' + marker.properties.description +'</h3><p>' + "Year" + "Rating" +
         marker.properties.rate + " out of 10" + '</p><p>' +
-        marker.properties.location + '</p>' ))setText(`${filmData.description} says their favorite pizza shop is ${studentData.favoritepizzashop}`))
-    .addTo(map);
-})
+        marker.properties.location + '</p>' ))
 
 //add legend to the map
 
-var MovieLookUp = (code) => {
+var FilmLookUp = (code) => {
   switch (code) {
     case 1:
       return {
@@ -92,10 +90,11 @@ for (var i=1; i<5; i++) {
   // this is a simple jQuery template, it will append a div to the legend with the color and description
 $('.legend').append(`
   <div>
-    <div class="legend-color-box" style="background-color:${movieInfo.color};"></div>
-    ${movieInfo.description}
+    <div class="legend-color-box" style="background-color:${filmInfo.color};"></div>
+    ${filmInfo.description}
   </div>
 `)
 }
 
 legend.addTo(map);
+})
