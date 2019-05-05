@@ -45,7 +45,7 @@ filmSpots.forEach(function(filmData) {
 
 //add legend to the map
 
-var FilmLookUp = (code) => {
+var FilmLookup = (code) => {
   switch (code) {
     case 1:
       return {
@@ -84,7 +84,7 @@ var FilmLookUp = (code) => {
   // use jquery to programmatically create a Legend
 // for numbers 1 - 5, get the movie color and description
 for (var i=1; i<5; i++) {
-var filmInfo = lookupColor(i);
+var filmInfo = FilmLookup(i);
 
   // this is a simple jQuery template, it will append a div to the legend with the color and description
 $('.legend').append(`
