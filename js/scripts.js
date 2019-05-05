@@ -82,7 +82,7 @@ var FilmLookup = (code) => {
   };
 
 
-//legend.addTo(map);
+egend.addTo(map);
 })
 // use jquery to programmatically create a Legend
 // for numbers 1 - 5, get the movie color and description
