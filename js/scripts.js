@@ -80,18 +80,18 @@ var FilmLookup = (code) => {
     }
    };
 
-   // use jquery to programmatically create a Legend
-   // for numbers 1 - 5, get the movie color and description
-   for (var i=1; i<5; i++) {
-   const filmInfo = FilmLookup(i);
-
-     // this is a simple jQuery template, it will append a div to the legend with the color and description
-   $('.legend').append(`
-     <div>
-       <div class="legend-color-box" style="background-color:${filmInfo.color};"></div>
-       ${filmInfo.description}
-     </div>
-   `)
-   }
 //legend.addTo(map);
 })
+// use jquery to programmatically create a Legend
+// for numbers 1 - 5, get the movie color and description
+for (var i=1; i<5; i++) {
+const filmInfo = FilmLookup(i);
+
+  // this is a simple jQuery template, it will append a div to the legend with the color and description
+$('.legend').append(`
+  <div>
+    <div class="legend-color-box" style="background-color:${filmInfo.color};"></div>
+    ${filmInfo.description}
+  </div>
+`)
+}
