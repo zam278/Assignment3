@@ -13,7 +13,7 @@ var map = new mapboxgl.Map({
 map.addControl(new mapboxgl.NavigationControl());
 
 var popup = new mapboxgl.Popup({ offset: 40 })
-  .setText('Iconic Film Locations!');
+  .setText('Iconic Film Location!');
 
 var marker = new mapboxgl.Marker()
   .setLngLat([-73.969145,40.669116])
@@ -81,6 +81,8 @@ var FilmLookup = (code) => {
    };
 
 
+//legend.addTo(map);
+})
 // use jquery to programmatically create a Legend
 // for numbers 1 - 5, get the movie color and description
 for (var i=1; i<5; i++) {
