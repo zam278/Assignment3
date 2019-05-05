@@ -13,7 +13,7 @@ var map = new mapboxgl.Map({
 map.addControl(new mapboxgl.NavigationControl());
 
 var popup = new mapboxgl.Popup({ offset: 40 })
-
+  .setText('Iconic Film Locations!');
 
 var marker = new mapboxgl.Marker()
   .setLngLat([-73.969145,40.669116])
