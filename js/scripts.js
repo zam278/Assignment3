@@ -39,7 +39,7 @@ filmSpots.forEach(function(filmData) {
   })
     .setLngLat([filmData.lon, filmData.lat])
     .setPopup(new mapboxgl.Popup({ offset: 40 })
-      .setHTML('<h4>' + filmData.description +'</h4><p>' + "Year: " + filmData.year + "Rating: " +
+      .setHTML('<h4>' + filmData.description +'</h4><p>' + "Year: " + filmData.year + '</p><p>'+ "Rating: " +
         filmData.rate + " out of 10" + '</p><p>' + "location: " +
         filmData.location + '</p>' ))
     .addTo(map);
