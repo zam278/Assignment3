@@ -72,11 +72,11 @@ var FilmLookup = (code) => {
           color: 'Pink',
           description: 'Fantasy',
         };
-    case 5:
-      return {
-        color: 'seagreen',
-        description: 'Romance',
-      };
+      case 6:
+        return {
+          color: 'seagreen',
+          description: 'Romance',
+          };
 
     }
   };
