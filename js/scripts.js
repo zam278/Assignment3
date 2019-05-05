@@ -95,5 +95,5 @@ for (var i=1; i<5; i++) {
   `)
 }
 
-legend.addTo(map);
+//legend.addTo(map);
 })
