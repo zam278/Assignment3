@@ -98,4 +98,4 @@ $('.legend').append(`
 }
 
 //Change basemap style
-  map.setPaintProperty('water', 'fill-color', '#a4bee8')
+  map.setPaintProperty('water', 'fill-color', '#a4bee8');
