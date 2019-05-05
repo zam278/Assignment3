@@ -81,8 +81,6 @@ var FilmLookUp = (code) => {
    };
 
 
-var legend = L.control({position: 'upperleft'});
-
   // use jquery to programmatically create a Legend
 // for numbers 1 - 5, get the movie color and description
 for (var i=1; i<5; i++) {
