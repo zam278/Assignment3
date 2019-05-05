@@ -59,7 +59,7 @@ var marker = new mapboxgl.Marker()
     };
   // use jquery to programmatically create a Legend
   // for numbers 1 - 5, get the movie color and description
-for (var i=1; i<6; i++) {
+for (var i=1; i<7; i++) {
   const filmInfo = FilmLookup(i);
 
   //to create a loop for the marker; every for loop it has to start and end with {}
