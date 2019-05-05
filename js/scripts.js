@@ -22,7 +22,7 @@ var marker = new mapboxgl.Marker()
 
 
   //to create a loop for the marker; every for loop it has to start and end with {}
-filmSpots.forEach(function(filmData) {
+filmSpots.forEach(function(studentData) {
 
   var thisFilmColor = 'steelblue';
   if (filmData.type === 'Action') thisFilmColor = 'orange';
