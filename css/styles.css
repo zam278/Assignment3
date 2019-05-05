@@ -7,15 +7,22 @@
 }
 
 h1 {
-  font-family: 'Impact', sans-serif;
+  font-family: 'Calibri', sans-serif;
 }
 
 h3 {
-  font-family: 'Impact', sans-serif;
+  font-family: 'Calibri', sans-serif;
 }
 
 #text {
-  font-family: 'Impact', sans-serif;
+  font-family: 'Calibri', sans-serif;
   width: 650px;
   text-align: center;
+}
+
+.legend-color-box {
+  height: 15px;
+  width: 15px;
+  float: left;
+  margin-right: 10px;
 }
