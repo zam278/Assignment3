@@ -77,8 +77,9 @@ var FilmLookup = (code) => {
         color: 'seagreen',
         description: 'Romance',
       };
+
     }
-   };
+  };
 
 
 //legend.addTo(map);
