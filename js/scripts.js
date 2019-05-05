@@ -80,8 +80,7 @@ var FilmLookup = (code) => {
     }
    };
 
-//Change basemap style
-  map.setPaintProperty('water', 'fill-color', '#a4bee8')
+
 //legend.addTo(map);
 })
 // use jquery to programmatically create a Legend
