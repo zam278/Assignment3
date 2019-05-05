@@ -20,10 +20,8 @@ var marker = new mapboxgl.Marker()
   .setPopup(popup)
   .addTo(map);
 
-
   //add legend to the map
-
-  var FilmLookup = (code) => {
+var FilmLookup = (code) => {
     switch (code) {
       case 1:
         return {
@@ -58,14 +56,11 @@ var marker = new mapboxgl.Marker()
 
       }
     };
-
-  })
-
+})
   // use jquery to programmatically create a Legend
   // for numbers 1 - 5, get the movie color and description
 for (var i=1; i<5; i++) {
   const filmInfo = FilmLookup(i);
-
 
   //to create a loop for the marker; every for loop it has to start and end with {}
 filmSpots.forEach(function(filmData) {
@@ -89,6 +84,9 @@ filmSpots.forEach(function(filmData) {
         filmData.rate + " out of 10" + '</p><p>' + "location: " +
         filmData.location + '</p>' ))
     .addTo(map);
+
+
+
     // this is a simple jQuery template, it will append a div to the legend with the color and description
   $('.legend').append(`
     <div>
