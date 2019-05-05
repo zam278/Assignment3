@@ -52,31 +52,31 @@ var FilmLookup = (code) => {
         color: 'orange',
         description: 'Action',
       };
-      case 2:
-        return {
-          color: 'plum',
-          description: 'Comedy',
+    case 2:
+      return {
+        color: 'plum',
+        description: 'Comedy',
+      };
+    case 3:
+      return {
+        color: 'springgreen',
+        description: 'Crime',
+      };
+    case 4:
+      return {
+        color: 'dodgerblue',
+        description: 'Drama',
+      };
+    case 5:
+      return {
+        color: 'Pink',
+        description: 'Fantasy',
+      };
+    case 6:
+      return {
+        color: 'seagreen',
+        description: 'Romance',
         };
-      case 3:
-        return {
-          color: 'springgreen',
-          description: 'Crime',
-        };
-      case 4:
-        return {
-          color: 'dodgerblue',
-          description: 'Drama',
-        };
-      case 5:
-        return {
-          color: 'Pink',
-          description: 'Fantasy',
-        };
-      case 6:
-        return {
-          color: 'seagreen',
-          description: 'Romance',
-          };
 
     }
   };
